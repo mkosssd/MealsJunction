@@ -18,7 +18,7 @@ const MealsItem = props => {
         <div >
           <h3>{props.props.name}</h3>
           <div className={styles.description}>{props.props.description}</div>
-        <div className={styles.price}>₹ {props.props.price.toFixed(2)}</div>
+        <div className={styles.price}>₹ {props.props.price}</div>
         </div>
       <MealForm id={props.props.id} onAddtoCart={onAddtoCartHandler}></MealForm>
     </li>
